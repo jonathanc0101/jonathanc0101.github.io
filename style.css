@@ -77,7 +77,6 @@ li a{
 nav ul li:hover {
     background-color: var(--light-contrast-color);
 }
-
 .contact-link{
     flex-grow: 1;
 }
@@ -89,6 +88,48 @@ nav ul li:hover {
 .contact-link:hover{
     background-color:var(--contrast-color);
 }
+
+/* smartphones */
+#nav-mobile ul li{
+    flex:1;
+    overflow: hidden;
+}
+
+#my-links{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    margin-left: auto;
+}
+
+#my-links ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#my-links ul li{
+    width: 100%;
+}
+
+#nav-mobile,#my-links{
+    /* we do not display it unless the media query says so */
+    display: none;
+
+}
+  
+
+@media (max-width:800px) {
+    #nav-desktop{
+        display: none;
+    }
+    #nav-mobile{
+        display: initial;
+    }
+
+}
+
+/* smartphones */
 
 /* navbar */
 
@@ -247,17 +288,6 @@ body{
 }
 
 
+
 /* accesibility */
 
-/* smartphones */
-
-@media (min-width:320px) {
-    #welcome-section{
-        height: 100vh;
-    }    
-    nav{
-        flex-shrink: 1;
-    }
-}
-
-/* smartphones */

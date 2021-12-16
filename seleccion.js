@@ -1,5 +1,8 @@
+
+
 let h=innerHeight/6;
-let w=document.getElementsByClassName("header")[0].offsetWidth;
+let parent = "p5-sketch";
+let w=document.getElementById(parent).offsetWidth;
 
 console.log(w);
 
@@ -13,7 +16,7 @@ let snd;
 
 function setup() {
     let myCanvas = createCanvas(w, h);
-    myCanvas.parent("p5-sketch");
+    myCanvas.parent(parent);
 
     frameRate(20);
     colorMode(HSB);

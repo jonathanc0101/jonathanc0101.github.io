@@ -8,14 +8,16 @@
 
     
     <script src="./libraries/p5.js"></script>
+    <script src="./script.js"></script>
     
     <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>   
     
     <main id="article-section">
-        <nav id="navbar">
+        <nav id="nav-desktop">
             <ul>
                 <li><a href="#welcome-section">Welcome section</a></li>
                 <li><a href="#web-section">Web Projects</a></li>
@@ -24,6 +26,29 @@
             </ul>
             
         </nav>  
+
+        <nav id="nav-mobile">
+            
+            <ul>
+                <li>
+                    <a href="#article-section">My portfolio</a>
+                </li>
+                <li id="toggle-button">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <div id="my-links">
+                <ul>
+                    <li><a href="#welcome-section">Welcome section</a></li>
+                    <li><a href="#web-section">Web Projects</a></li>
+                    <li><a href="#desktop-section">Desktop projects</a></li>
+                    <li class="contact-link"><a href="#contact-section" >Contact me</a></li>
+                </ul>
+            </div>
+            
+        </nav>
         
         <header class="header">
             <div id="welcome-section">  
@@ -76,7 +101,7 @@
                 <section class="project-tile" id="product-page">
 
                     <h3>The product landing page</h3>
-                    <p>This is an example of product page, let's not think about the fact that the product and the company already exists and I have nothing to do with them.</p>
+                    <p>This is an example of product page, let's not think about the fact that the product and the company already exist and I have nothing to do with them.</p>
                         
                     <a href="https://codepen.io/jonathanc0101/pen/yLzVPbY" target="_blank" rel="noopener noreferrer">
                         <img src="https://raw.githubusercontent.com/jonathanc0101/Freecodecamp-projects/master/1st%20course/images/product%20landing%20page.PNG" alt="image of the page">
