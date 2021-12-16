@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+:root{
+    --card-shadow: 0 .2vw .4vw 0 rgba(0, 0, 0, 0.2), 0 .3vw .8vw 0 rgba(0, 0, 0, 0.19);
+}
+
+html{
+    background: radial-gradient(#e66465, #a74848);   
+    color: #180404;
+    font-size: 20px;
+}
+
+body{  
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    
+}
+
+#main{
+    background: whitesmoke;
+    border-radius: 10px;    
+    
+    width: 80%;
+    display: block;
+    margin: auto auto auto auto;
+
+    box-shadow: var(--card-shadow);
+}
+
+figure{
+    width: 70%;
+    margin: auto auto;
+
+    box-shadow: var(--card-shadow);
+}
+
+figcaption{
+    padding: 1%;
+}
+
+#image{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+    max-width: 100%;
+
+}
+
+#img-caption{
+    width:70%;
+
+    font-size: .9rem;
+    margin: auto auto auto auto;
+}
+
+ul{
+    text-align: left;
+}
+
+h1{
+    padding-top: 7%;
+}
+
+p,h2,li,a {
+    max-width: 70%;
+    margin: auto auto auto auto;
+    padding: 1%;   
+
+    line-height: 2.5rem;
+}
+
+.quote{
+    font-size: .9rem;
+    font-style: italic;
+}
+.quotesignature{
+    font-size: .7rem;
+    font-weight: 800;
+}
