@@ -1,3 +1,4 @@
+
 function toggleNav() {
     var x = document.getElementById("my-links");
     if (x.style.display === "block") {
@@ -6,3 +7,4 @@ function toggleNav() {
       x.style.display = "block";
     }
   }
+
