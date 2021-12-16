@@ -159,7 +159,6 @@ h2{
     display: block;
     background-color: var(--dark-contrast-color);
     padding: 2%;
-    padding-top:6%;
     box-shadow: var(--dark-shadow);
 }
 
