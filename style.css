@@ -27,18 +27,12 @@
 html{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-kerning: auto;
-    font-size: 3vh;
+    font-size: 2vh;
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
     font-variant-ligatures: normal;
     font-weight: normal;
-}
-
-@media (min-width: 768px){
-    #welcome-section{
-        height: 100vh;
-    }
 }
 
 body{
@@ -53,7 +47,6 @@ nav{
     left: 0;
 
     width: 100%;
-
 }
 
 ul{
@@ -246,3 +239,25 @@ img{
 }
 
 /* contact section */
+
+/* accesibility */
+body{
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* accesibility */
+
+/* smartphones */
+
+@media (min-width:320px) {
+    #welcome-section{
+        height: 100vh;
+    }    
+    nav{
+        flex-shrink: 1;
+    }
+}
+
+/* smartphones */

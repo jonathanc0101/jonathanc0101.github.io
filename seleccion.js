@@ -1,5 +1,7 @@
 let h=innerHeight/6;
-let w=innerWidth;
+let w=document.getElementsByClassName("header")[0].offsetWidth;
+
+console.log(w);
 
 let numElements = 150;
 let widthElement = w/numElements;
