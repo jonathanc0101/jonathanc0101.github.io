@@ -11,8 +11,7 @@ let widthElement = w/numElements;
 
 let vector=[];
 let j=0;
-
-let snd;
+let reversed = false;
 
 function setup() {
     let myCanvas = createCanvas(w, h);
@@ -21,7 +20,6 @@ function setup() {
     frameRate(20);
     colorMode(HSB);
     vector = crearArrayRandom(numElements);
-
 }
 
 function draw() {
@@ -29,7 +27,19 @@ function draw() {
     intercambiar(vector,j,menorPos(vector,j));
 
     if(j<vector.length-1){
-        j++;}
+        j++;
+    }
+    else{
+        j=0;
+        vector = vector.reverse();
+        reversed = true;
+    }
+    
+    if (j>=vector.length/2 && reversed){
+        vector = crearArrayRandom(numElements);
+        reversed = false;
+        j = 0;
+    }
 }
 
 function crearArrayRandom(max){
