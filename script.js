@@ -8,3 +8,15 @@ function toggleNav() {
     }
   }
 
+function hideNav(){
+  var x = document.getElementById("my-links");
+  x.style.display = "none";  
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  let myButtons = document.getElementsByClassName("nav-button");
+  for(button of myButtons){
+    button.addEventListener("click", hideNav)
+  }
+
+});
