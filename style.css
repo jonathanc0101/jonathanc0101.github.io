@@ -27,12 +27,14 @@
 html{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-kerning: auto;
-    font-size: 2vh;
+    font-size: 3vh;
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
     font-variant-ligatures: normal;
     font-weight: normal;
+
+    line-height: 5vh;
 }
 
 body{
@@ -118,13 +120,15 @@ nav ul li:hover {
 
 }
   
-
 @media (max-width:800px) {
     #nav-desktop{
         display: none;
     }
     #nav-mobile{
         display: initial;
+    }
+    html{
+        font-size: 2vh;
     }
 
 }
