@@ -328,7 +328,9 @@ h4{
         top: 0;
         width: 100vw;
     }
- 
+    .active{
+        background-color: initial;
+    }
 }
 
 /* smartphones */
