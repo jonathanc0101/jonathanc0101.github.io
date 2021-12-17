@@ -70,3 +70,15 @@ button{
     border:0;
     width: 98%;
 }
+
+/* smartphones */
+
+  
+@media (max-width:800px) {
+    .contain{
+        width: 90%;
+    }
+
+}
+
+/* smartphones */
